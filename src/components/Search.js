@@ -12,11 +12,10 @@ const Search = () => {
   };
 
   return (
-    <form>
+    <form onSubmit={handleSearch}>
       <label htmlFor="search" className="search-label">
         Search Artist
       </label>
-      <br />
       <input
         type="search"
         value={input}
@@ -26,7 +25,7 @@ const Search = () => {
         required
       />
       <br />
-      <button type="submit" className="search-btn" onClick={handleSearch}>
+      <button type="submit" className="search-btn">
         Search
       </button>
     </form>

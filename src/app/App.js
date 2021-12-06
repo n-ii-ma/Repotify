@@ -5,11 +5,13 @@ import "../App.css";
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>The Top Tracks from Your Favorite Artists in One Place</h1>
-      </header>
-      <Search />
-      <TrackList />
+      <div className='container'>
+        <header>
+          <h1>Top Tracks from the Artists You Love</h1>
+        </header>
+        <Search />
+        <TrackList />
+      </div>
     </div>
   );
 }
