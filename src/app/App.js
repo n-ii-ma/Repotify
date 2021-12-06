@@ -5,13 +5,16 @@ import "../App.css";
 
 function App() {
   return (
-    <div className="App">
-      <div className="container">
+    <div className="container">
+      <div>
         <header>
           <h1>Top Tracks from the Artists You Love</h1>
         </header>
         <Search />
         <TrackList />
+      </div>
+      <div>
+        <footer>&copy; All Rights Reserved</footer>
       </div>
     </div>
   );
