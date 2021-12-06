@@ -26,10 +26,12 @@ body {
 h1 {
   font-family: Montserrat;
   font-size: 2.5rem;
+  font-weight: 600;
   margin-top: 1em;
   color: white;
   margin-bottom: 1.25em;
   text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
 }
 
 .search-label {
@@ -106,17 +108,15 @@ button:disabled {
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
-@media only screen and (min-width: 1200px) {
+/* Landscape Mobile */
+@media only screen and (min-width: 320px) and (orientation: landscape) {
   h1 {
-    font-size: 3rem;
-    margin-top: 2em;
-  }
-
-  .search-label {
-    font-size: 2rem;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
   }
 }
 
+/* Tablet */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
   .container {
     margin: 2em;
@@ -129,5 +129,17 @@ button:disabled {
 
   .search-label {
     font-size: 2.5rem;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+  }
+
+  .search-label {
+    font-size: 2rem;
   }
 }
