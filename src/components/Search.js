@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { useDispatch } from "react-redux";
-import { getTopTracks } from "../features/tracks/topTracksSlice";
+// import { useDispatch } from "react-redux";
+// import { getTopTracks } from "../features/tracks/topTracksSlice";
 
 const Search = () => {
   const [input, setInput] = useState("");
-  const dispatch = useDispatch();
+  // Dispatch
 
   const handleSearch = (e) => {
     e.preventDefault();
