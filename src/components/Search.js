@@ -1,14 +1,17 @@
 import { useState } from "react";
-// import { useDispatch } from "react-redux";
-// import { getTopTracks } from "../features/tracks/topTracksSlice";
+import { useDispatch } from "react-redux";
+import Spotify from "../utils/Spotify";
+import { getTopTracks } from "../features/tracks/topTracksSlice";
 
 const Search = () => {
   const [input, setInput] = useState("");
-  // Dispatch
+  const dispatch = useDispatch();
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!input) return;
+
+    setInput(Spotify.search());
   };
 
   return (
