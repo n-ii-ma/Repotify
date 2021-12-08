@@ -1,5 +1,5 @@
 const clientID = "07be2d47cbce4b259bcc607f2db19129";
-const clientSecret = "0898f3b8cd8b4ab8957940ad2add8a82";
+const clientSecret = "9242edb6dca64460a3a8de3be6ad6f13";
 
 // Request authorization
 const authOptions = {
