@@ -1,13 +1,4 @@
-import { useState } from "react";
-
 const TopTracks = ({ track }) => {
-  const [loaded, setLoaded] = useState(false);
-
-  // When Tracks are Loaded, Change the State to True
-  const finishLoading = () => {
-    setLoaded(true);
-  };
-
   return (
     <div>
       <iframe
@@ -17,8 +8,7 @@ const TopTracks = ({ track }) => {
         height="80"
         allowtransparency="true"
         allow="encrypted-media"
-        className={loaded ? "shadow" : "tracks"}
-        onLoad={finishLoading}
+        className="tracks"
       ></iframe>
     </div>
   );

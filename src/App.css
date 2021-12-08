@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url("./assets/pexels-vishnu-r-nair-1105666.jpg");
+  background-image: url("./assets/pexels-vishnu-r-nair-1105666.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -173,11 +173,6 @@ button:disabled {
 }
 
 .tracks {
-  margin-bottom: 0.75em;
-  border-radius: 10px;
-}
-
-.shadow {
   margin-bottom: 0.75em;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
