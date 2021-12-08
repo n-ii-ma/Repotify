@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import getAccessToken from "../../utils/accessToken.js";
+import getAccessToken from "../../utils/accessToken";
 
+// Async Thunk to Handle the API Response which Searches for an Artist
 export const searchArtist = createAsyncThunk(
   "search/searchArtist",
   async (apiAddress) => {

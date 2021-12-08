@@ -1,10 +1,17 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
+import getAccessToken from "../../utils/accessToken";
 
-// Async Thunk to Handle the API Response
+// Async Thunk to Handle the API Response which Gets Artist's Top Tracks
 export const getTopTracks = createAsyncThunk(
   "topTracks/getTopTracks",
   async (apiAddress) => {
-    const response = await fetch(apiAddress);
+    const accessToken = await getAccessToken();
+    const response = await fetch(apiAddress, {
+      headers: {
+        "Authorization": `Bearer ${accessToken}`,
+        "Content-Type": "application/json",
+      },
+    });
 
     if (!response.ok) throw new Error("Request Failed!");
 
@@ -16,7 +23,7 @@ export const getTopTracks = createAsyncThunk(
 const topTracksSlice = createSlice({
   name: "topTracks",
   initialState: {
-    artistTopTracks: [],
+    artistTopTracks: {},
     isLoading: false,
     hasError: false,
   },

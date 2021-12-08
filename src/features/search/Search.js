@@ -1,14 +1,26 @@
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { searchArtist } from "./searchSlice";
 import { selectArtistName } from "./searchSlice";
+import { searchArtist } from "./searchSlice";
 import { setArtist } from "./searchSlice";
+import { selectArtistID } from "../search/searchSlice";
+import { getTopTracks } from "../tracks/topTracksSlice";
 
 const Search = () => {
-  const input = useSelector(selectArtistName);
   const dispatch = useDispatch();
+  const input = useSelector(selectArtistName);
+  const artistID = useSelector(selectArtistID);
 
+  // Endpoints for Search and Get Artist's Top Tracks
   const searchEndpoint = `https://api.spotify.com/v1/search?q=${input}&type=artist`;
+  const topTracksEndpoint = `https://api.spotify.com/v1/artists/${artistID}/top-tracks?market=US`;
 
+  // If Artist ID is True and Returned from the Server, then Dispatch and Get the Top Tracks
+  useEffect(() => {
+    if (artistID) dispatch(getTopTracks(topTracksEndpoint));
+  }, [dispatch, topTracksEndpoint, artistID]);
+
+  // Search for the Artist on Submit and Show Artist's Top Tracks
   const handleSearch = (e) => {
     e.preventDefault();
     if (!input) return;

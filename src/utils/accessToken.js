@@ -1,4 +1,4 @@
-import authOptions from "./credentials.js";
+import authOptions from "./credentials";
 
 // "Request" Library
 import { post } from "request";
