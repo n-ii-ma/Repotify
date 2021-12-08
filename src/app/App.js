@@ -1,4 +1,4 @@
-import Search from "../components/Search";
+import Search from "../features/search/Search";
 import TrackList from "../components/TrackList";
 import "../reset.css";
 import "../App.css";

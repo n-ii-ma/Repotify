@@ -6,9 +6,7 @@ export const getTopTracks = createAsyncThunk(
   async (apiAddress) => {
     const response = await fetch(apiAddress);
 
-    if (!response.ok) {
-      throw new Error("Request Failed!");
-    }
+    if (!response.ok) throw new Error("Request Failed!");
 
     const data = await response.json();
     return data;

@@ -1,17 +1,19 @@
-import { useState } from "react";
-import { useDispatch } from "react-redux";
-import Spotify from "../utils/Spotify";
-import { getTopTracks } from "../features/tracks/topTracksSlice";
+import { useSelector, useDispatch } from "react-redux";
+import { searchArtist } from "./searchSlice";
+import { selectArtistName } from "./searchSlice";
+import { setArtist } from "./searchSlice";
 
 const Search = () => {
-  const [input, setInput] = useState("");
+  const input = useSelector(selectArtistName);
   const dispatch = useDispatch();
+
+  const searchEndpoint = `https://api.spotify.com/v1/search?q=${input}&type=artist`;
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (!input) return;
 
-    setInput(Spotify.search());
+    dispatch(searchArtist(searchEndpoint));
   };
 
   return (
@@ -22,7 +24,7 @@ const Search = () => {
       <input
         type="search"
         value={input}
-        onChange={(e) => setInput(e.target.value)}
+        onChange={(e) => dispatch(setArtist(e.target.value))}
         className="search-input"
         placeholder="E.g.: Taylor Swift"
         required
