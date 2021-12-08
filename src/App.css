@@ -46,8 +46,7 @@ h1 {
   background-color: #fff;
   border-radius: 20px;
   border-style: none;
-  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px,
-    rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   color: #3c4043;
   display: inline-flex;
   font-family: Quicksand;
@@ -95,10 +94,95 @@ button:disabled {
     rgba(60, 64, 67, 0.15) 0 4px 8px 3px;
 }
 
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin-top: 1em;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00ff59;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.error-message {
+  font-family: Quicksand;
+  color: white;
+  margin-top: 1em;
+  font-size: 1.5rem;
+  text-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.tracks {
+  margin-bottom: 0.75em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
 footer {
   font-family: Montserrat;
   color: white;
   margin-bottom: 0.5em;
+  margin-top: 1em;
 }
 
 /* Landscape Mobile */
@@ -106,6 +190,11 @@ footer {
   h1 {
     margin-top: 0.5em;
     margin-bottom: 1em;
+  }
+
+  .error-message {
+    margin-top: 0.25em;
+    margin-bottom: 1.5em;
   }
 }
 
@@ -119,6 +208,10 @@ footer {
   .search-label {
     font-size: 2.5rem;
   }
+
+  .error-message {
+    font-size: 2rem;
+  }
 }
 
 /* Landscape Tablet */
@@ -131,6 +224,10 @@ footer {
   .search-label {
     font-size: 2.25rem;
   }
+
+  .error-message {
+    font-size: 2rem;
+  }
 }
 
 /* Desktop */
@@ -141,6 +238,11 @@ footer {
   }
 
   .search-label {
+    font-size: 2rem;
+  }
+
+  .error-message {
+    margin-top: 1em;
     font-size: 2rem;
   }
 }

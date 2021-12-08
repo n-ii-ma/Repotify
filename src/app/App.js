@@ -14,7 +14,7 @@ function App() {
         <TrackList />
       </div>
       <div>
-        <footer>&copy; All Rights Reserved</footer>
+        <footer>&copy; Repotify</footer>
       </div>
     </div>
   );

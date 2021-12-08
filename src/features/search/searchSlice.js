@@ -54,8 +54,8 @@ const searchSlice = createSlice({
 // Selectors
 export const selectArtistName = (state) => state.search.artistName;
 export const selectArtistID = (state) => state.search.artistID;
-/* export const selectArtistID = (state) =>
-  state.search.searchArtist.artists.items[0].id; */
+export const selectSearchIsLoading = (state) => state.search.isLoading;
+export const selectSearchHasError = (state) => state.search.hasError;
 
 // Action
 export const { setArtist } = searchSlice.actions;
