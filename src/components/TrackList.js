@@ -5,7 +5,8 @@ import { selectTopTracksHasError } from "../features/tracks/topTracksSlice";
 import { selectSearchIsLoading } from "../features/search/searchSlice";
 import { selectSearchHasError } from "../features/search/searchSlice";
 import IsLoading from "./IsLoading";
-import HasError from "./HasError";
+import SearchHasError from "./SearchHasError";
+import TrackHasError from "./TrackHasError";
 import TopTracks from "../features/tracks/TopTracks";
 
 const TrackList = () => {
@@ -15,8 +16,10 @@ const TrackList = () => {
   const searchIsLoading = useSelector(selectSearchIsLoading);
   const searchHasError = useSelector(selectSearchHasError);
 
+  // Show Loading Spinner on Pending State and Show Error Message on Rejected State
   if (topTracksIsLoading || searchIsLoading) return <IsLoading />;
-  if (topTracksHasError || searchHasError) return <HasError />;
+  if (searchHasError) return <SearchHasError />;
+  if (topTracksHasError) return <TrackHasError />;
 
   return (
     <div>

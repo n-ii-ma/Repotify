@@ -8,7 +8,7 @@ export const getTopTracks = createAsyncThunk(
     const accessToken = await getAccessToken();
     const response = await fetch(apiAddress, {
       headers: {
-        Authorization: `Bearer ${accessToken}`,
+        "Authorization": `Bearer ${accessToken}`,
         "Content-Type": "application/json",
       },
     });
