@@ -9,6 +9,7 @@ const TopTracks = ({ track }) => {
         allowtransparency="true"
         allow="encrypted-media"
         className="tracks"
+        loading="lazy"
       ></iframe>
     </div>
   );
