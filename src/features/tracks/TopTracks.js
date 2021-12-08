@@ -3,6 +3,7 @@ import { useState } from "react";
 const TopTracks = ({ track }) => {
   const [loaded, setLoaded] = useState(false);
 
+  // When Tracks are Loaded, Change the State to True
   const finishLoading = () => {
     setLoaded(true);
   };
