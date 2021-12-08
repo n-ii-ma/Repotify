@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 const TopTracks = ({ track }) => {
+  const [loaded, setLoaded] = useState(false);
+
+  const finishLoading = () => {
+    setLoaded(true);
+  };
+
   return (
     <div>
       <iframe
@@ -8,7 +16,8 @@ const TopTracks = ({ track }) => {
         height="80"
         allowtransparency="true"
         allow="encrypted-media"
-        className="tracks"
+        className={loaded ? "shadow" : "tracks"}
+        onLoad={finishLoading}
       ></iframe>
     </div>
   );
