@@ -8,7 +8,7 @@ export const getTopTracks = createAsyncThunk(
     const accessToken = await getAccessToken();
     const response = await fetch(apiAddress, {
       headers: {
-        "Authorization": `Bearer ${accessToken}`,
+        Authorization: `Bearer ${accessToken}`,
         "Content-Type": "application/json",
       },
     });
@@ -23,7 +23,7 @@ export const getTopTracks = createAsyncThunk(
 const topTracksSlice = createSlice({
   name: "topTracks",
   initialState: {
-    artistTopTracks: {},
+    artistTopTracks: [],
     isLoading: false,
     hasError: false,
   },
@@ -34,7 +34,7 @@ const topTracksSlice = createSlice({
         state.hasError = false;
       })
       .addCase(getTopTracks.fulfilled, (state, action) => {
-        state.artistTopTracks = action.payload;
+        state.artistTopTracks = action.payload.tracks;
         state.isLoading = false;
         state.hasError = false;
       })
