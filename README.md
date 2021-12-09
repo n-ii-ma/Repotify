@@ -33,7 +33,7 @@ Project is created with:
 Allows users to search the Spotify library for an artist and get their top tracks, while being able to play a preview of them.
 
 ## Screenshot
-![image](https://user-images.githubusercontent.com/88039431/145356247-66a3e47f-3e56-4f43-89e8-4d4f0ec30205.png)
+![image](https://user-images.githubusercontent.com/88039431/145356700-f0bc943a-22d0-487c-aab5-2455a430abab.png)
 
 ## Setup
 Just search for your favorite artist and enjoy playing a preview of their top tracks.
