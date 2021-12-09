@@ -1,6 +1,6 @@
 # Repotify
 
-> An app which let's you search for your favorite artist and get their top ten tracks with previews.
+An app which let's you search for your favorite artist and get their top ten tracks with previews.
 
 ## Table of contents
 + [General Info](#general-info)
