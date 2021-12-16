@@ -19,7 +19,6 @@ This React-Redux app uses the Spotify API to let you search any artist you want 
 https://repotify.netlify.app/
 
 ## Technologies
-
 Project is created with:
 + React v17.0.2
 + Redux 4.1.2
