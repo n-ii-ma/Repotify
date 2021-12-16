@@ -33,8 +33,8 @@ Allows users to search the Spotify library for an artist and get their top track
 
 ## Screenshots
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/88039431/145356700-f0bc943a-22d0-487c-aab5-2455a430abab.png" width="300" />
-  <img src="https://user-images.githubusercontent.com/88039431/145356930-eca1781b-5cf0-4b6f-9742-63c43610cbaa.png" width="500" /> 
+  <img src="https://user-images.githubusercontent.com/88039431/146408485-28671a2a-71d6-4d75-874d-864ce80f8b0a.png" width="300" />
+  <img src="https://user-images.githubusercontent.com/88039431/146408705-9ddc0aaa-d311-4b92-b35e-0bbc18ab68f2.png" width="500" /> 
 </p>
 
 ## Setup
