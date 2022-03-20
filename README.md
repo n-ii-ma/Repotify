@@ -38,11 +38,7 @@ Allows users to search the Spotify library for an artist and get their top track
 </p>
 
 ## Setup
-The following variables are required to run the program.
-- CLIENT_ID
-- CLIENT_SECRET
-
-Both are required to fetch data from Spotify. Check [here](https://developer.spotify.com/documentation/general/guides/authorization/app-settings/) to learn more.
+Just search for your favorite artist and enjoy playing a preview of their top tracks.
 
 ## Usage
 Useful for getting the gist of an artist's voice by listening to the preview of their top tracks.

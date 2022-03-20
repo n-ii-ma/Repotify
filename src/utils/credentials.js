@@ -1,9 +1,5 @@
-// Inject environment variables
-import dotenv from 'dotenv';
-dotenv.config();
-
-const clientID = process.env.CLIENT_ID;
-const clientSecret = process.env.CLIENT_SECRET;
+const clientID = "5fab8efa7e464db59c5a70348063c66e";
+const clientSecret = "66d4e0b0893240248649daf9ad916ef1";
 
 // Request authorization
 const authOptions = {
