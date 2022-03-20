@@ -38,7 +38,7 @@ Allows users to search the Spotify library for an artist and get their top track
 </p>
 
 ## Setup
-The following variables are required to run the program.
+The following variables are required to run the program:
 - REACT_APP_CLIENT_ID
 - REACT_APP_CLIENT_SECRET
 
