@@ -1,6 +1,6 @@
 # Repotify
 
-An app which lets you search for your favorite artist and get their top ten tracks with previews.
+A React/Redux app which lets clients search for their favorite artist and get their top ten tracks with previews.
 
 ## Table of contents
 + [General Info](#general-info)
@@ -13,7 +13,7 @@ An app which lets you search for your favorite artist and get their top ten trac
 + [Contact](#contact)
 
 ## General Info
-This React-Redux app uses the Spotify API to let you search any artist you want and get their top ten tracks. By using the Spotify Embed you can play and share the tracks with others.
+This React-Redux app uses the Spotify API to let clients search any artist's name and get their top ten tracks. By using the Spotify Embed they can play and share the tracks with others.
 
 ## Address
 https://repotify.netlify.app/
@@ -28,7 +28,9 @@ Project is created with:
 + VSCode 1.62.3
 
 ## Features
-Allows users to search the Spotify library for an artist and get their top tracks, while being able to play a preview of them.
+- Get the top ten tracks of the searched artist
+- Play the tracks
+- Share the tracks and view them in Spotify
 
 ## Screenshots
 <p float="left">
