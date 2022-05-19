@@ -24,7 +24,6 @@ Project is created with:
 + Redux 4.1.2
 + React-Redux v7.2.6
 + @Reduxjs/Toolkit v1.6.2
-+ Node.js v14.18.0
 + npm v6.14.15
 + VSCode 1.62.3
 
