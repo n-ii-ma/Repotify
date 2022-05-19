@@ -1,3 +1,5 @@
+[![MIT License](https://img.shields.io/badge/License-MIT-blue)](https://opensource.org/licenses/MIT)
+
 # Repotify
 
 A React/Redux app which lets clients search for their favorite artist and get their top ten tracks with previews.
