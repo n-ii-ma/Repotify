@@ -8,10 +8,11 @@ A React/Redux app which lets clients search for their favorite artist and get th
 + [General Info](#general-info)
 + [Address](#address)
 + [Technologies](#technologies)
-+ [Screenshots](#screenshots)
 + [Setup](#setup)
 + [Features](#features)
++ [Screenshots](#screenshots)
 + [Usage](#usage)
++ [License](#license)
 + [Contact](#contact)
 
 ## General Info
@@ -28,12 +29,6 @@ Project is created with:
 + @Reduxjs/Toolkit v1.6.2
 + npm v6.14.15
 + VSCode 1.62.3
-
-## Screenshots
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/88039431/146408485-28671a2a-71d6-4d75-874d-864ce80f8b0a.png" width="300" />
-  <img src="https://user-images.githubusercontent.com/88039431/146408705-9ddc0aaa-d311-4b92-b35e-0bbc18ab68f2.png" width="500" /> 
-</p>
 
 ## Setup
 
@@ -56,8 +51,17 @@ Both are required to fetch data from Spotify. Check [here](https://developer.spo
 - Play the tracks
 - Share the tracks and view them in Spotify
 
+## Screenshots
+<p float="left">
+  <img src="https://user-images.githubusercontent.com/88039431/146408485-28671a2a-71d6-4d75-874d-864ce80f8b0a.png" width="300" />
+  <img src="https://user-images.githubusercontent.com/88039431/146408705-9ddc0aaa-d311-4b92-b35e-0bbc18ab68f2.png" width="500" /> 
+</p>
+
 ## Usage
 Useful for getting the gist of an artist's voice by listening to the preview of their top tracks.
+
+## License
+Distributed under the [MIT](https://opensource.org/licenses/MIT) License.
 
 ## Contact
 Created by [n-ii-ma](https://github.com/n-ii-ma)
