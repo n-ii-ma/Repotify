@@ -15,7 +15,7 @@ A React/Redux app which lets clients search for their favorite artist and get th
 + [Contact](#contact)
 
 ## General Info
-This React-Redux app uses the Spotify API to let clients search any artist's name and get their top ten tracks. By using the Spotify Embed they can play and share the tracks with others.
+This React/Redux app uses the Spotify API to let clients search any artist's name and get their top ten tracks. By using the Spotify Embed they can play and share the tracks with others.
 
 ## Address
 https://repotify.netlify.app/
