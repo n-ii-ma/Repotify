@@ -7,6 +7,7 @@ const store = configureStore({
     search: searchReducer,
     topTracks: topTracksReducer,
   },
+  devTools: process.env.NODE_ENV === 'development' && true,
 });
 
 export default store;
